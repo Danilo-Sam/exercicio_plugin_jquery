@@ -1,0 +1,36 @@
+*{
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    background-color: blue;
+}
+
+header h2{
+    position: absolute;
+    margin-top: 0;
+}
+
+form{
+    padding-top: 8px;
+}
+
+.container{
+    max-width: 120px;
+    max-height: 32px;
+    height: 100%;
+    margin-top: 96px;
+}
+
+#form-inputs{
+    padding-top: 8px;
+}
+
+#form-inputs button{
+    margin-left: 52px;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h2>faça seu cadastro</h2>
+    </header>
+    <form>
+        <div class="container">
+            <div id="form-inputs">
+                <label for="nome completo">Seu nome completo:</label>
+                <input type="text" required>
+            </div>
+            <div id="form-inputs">
+                <label for="e-mail">Seu melhor e-mail:</label>
+                <input id="e-mail" type="email" required>
+            </div>
+            <div id="form-inputs">
+                <label for="telefone">Seu telefone:</label>
+                <input id="telefone" type="tel" required>
+            </div>
+            <div id="form-inputs">
+                <label for="CPF">Digite seu CPF:</label>
+                <input id="CPF" type="tel" required>
+            </div>
+            <div id="form-inputs">
+                <label for="endereço">seu endereço completo:</label>
+                <input type="text" required>
+            </div>
+            <div id="form-inputs">
+                <label for="CEP">Digite seu CEP:</label>
+                <input id="CEP" type="tel" required>
+            </div>
+            <div id="form-inputs">
+                <button type="submit">Enviar cadastro</button>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./plugin_jquery/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#telefone').mask('(00) 00000-0000')
+        
+            $('#CPF').mask('000.000.000-00')
+        
+            $('#CEP').mask('00000-000')
+        })
+    </script>
+</body>
+</html>
